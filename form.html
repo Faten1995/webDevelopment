@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>"Forms"</title>
+	</head>
+	
+	<body>
+		<h1>Feedback Form</h1>
+		<p> please fill out this form to help us improve our site </p>
+		
+		<!-- this tag starts the form -->
+		<form method = "post" action = "http://www.deitel.com">
+		
+			<p><label>Name:
+				<input name = "name" type = "text" size = "25" maxlength = "30">
+			</label></p>
+		
+			<p><label>Comments:<br>
+				<textarea name = "comments" rows = "4" cols = "36">
+				Enter Comments Here.</textarea>
+			</label></p>
+		
+			<p><label>E-mial Address:
+				<input name = "email" type = "password" size = "25">
+			</label></p>
+			
+			<!-- check box -->
+			<p> 
+				<strong>Things yu liked:</strong><br>
+				<label>Site design
+					<input name = "thingsliked" type = "checkbox" value = "Design"></label>
+				<label>Links
+					<input name = "thingsliked" type = "checkbox" value = "Links"></label>
+				<label>Ease of use
+					<input name = "thingsliked" type = "checkbox" value = "Ease"></label>
+				<label>Images
+					<input name = "thingsliked" type = "checkbox" value = "Images"></label>
+				<label>Source code
+					<input name = "thingsliked" type = "checkbox" value = "Code"></label>
+			</p>
+			
+			<!-- radio -->
+			
+			<p>
+				<strong>How do you get to our site?:</strong><br>
+				<label>Search engine
+					<input name = "howtosite" type = "radio" value = "search engine" checked></label>
+				<label>inks from another site
+					<input name = "howtosite" type = "radio" value = "link"></label>
+				<label>Deitel.com Web site
+					<input name = "howtosite" type = "radio" value = "deitel.com"></label>
+				<label>Reference in a book
+					<input name = "howtosite" type = "radio" value = "book"></label>
+				<label>Other
+					<input name = "howtosite" type = "radio" value = "other"></label>
+			
+			</p>
+			<p>
+				<label>Rate our site:
+				<!-- the select presents a drop sown menu -->
+				
+				<select name = "rating">
+					<option selected>Amazing</option>
+					<option>10</option>
+					<option>9</option>
+					<option>8</option>
+					<option>7</option>
+					<option>6</option>
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+					<option>Awful</option>
+				</select>
+				</label>
+			</p>
+			<p>
+				<input type = "submit" value = "Submit">
+				<input type = "reset" value = "Clear">
+			</p>
+		</form>
+	</body>
+</html>
