@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab Exercise1</title>
+    </head>
+    
+    <body>
+        <h1>This is the LabExercise1</h1>
+        <h2>for web Development Course</h2>
+        <h3>CS425</h3>
+        <form method = "post" action = "http://www.deitel.com">
+           <table border = "1">
+               <thead>
+                   <tr>
+                       <th>Department : </th>
+                       <th colspan="5">Computer Science &amp; Engineering</th>
+                   </tr>
+               </thead>
+               
+               <tfoot>
+                   <tr>
+                       <th colspan="6">FX-ACA-001 Issue 0 Rev 0 </th>
+                   </tr>
+               </tfoot>
+               
+               <tbody>
+                   <tr>
+                       <th>Day</th>
+                       <td><input name = "day" type = "text" size = "25" maxlength = "30"></td>
+                       <th>Date</th>
+                       <td><input name = "date" type = "date" size = "20" maxlength = "20"></td>
+                       <th>Time</th>
+                       <td><input name = "time" type = "time" size = "25" maxlength = "30"></td>
+                   </tr>
+                   
+                   <tr>
+                       <th>Session</th>
+                       <td><input name = "session" type = "text" size = "25" maxlength = "30"></td>
+                       <td colspan="4" rowspan="8">
+                       <img src = "juc.png" width = "300"
+                        height = "167" alt = "Picture of a JUC logo"></td>
+                   </tr>
+                   
+                    <tr>
+                       <th>Location</th>
+                       <td>
+                    <label>Room 431
+					<input name = "location" type = "radio" value = "431" checked></label>
+				    <label>Room 432
+					<input name = "location" type = "radio" value = "432"></label>
+				    <label>Room 433
+					<input name = "location" type = "radio" value = "433"></label>
+				    </td>
+                   </tr>
+                   
+                   <tr>
+                     <th>Exam duration</th>
+                     <td><input name = "duration" type = "text" size = "25" maxlength = "30"></td>  
+                   </tr>
+                   
+                   <tr>
+                     <th>Course Code</th>
+                     <td><input name = "code" type = "text" size = "25" maxlength = "30"></td>  
+                   </tr>
+                   
+                   <tr>
+                     <th>Course Title</th>
+                     <td><input name = "title" type = "text" size = "25" maxlength = "30"></td>  
+                   </tr>
+                   
+                   <tr>
+                     <th>Course Section</th>
+                     <td><input name = "section" type = "text" size = "25" maxlength = "30"></td>  
+                   </tr>
+                   
+                   <tr>
+                     <th>No. of copies</th>
+                     <td><input name = "copies" type = "text" size = "25" maxlength = "30"></td>  
+                   </tr>
+                   
+                   <tr>
+                     <th>Faculty</th>
+                     <td><select name = "faculty">
+                         <option selected>CS</option>
+                         <option>MIS</option>
+                         <option>BUS</option>
+                         <option>ENGLISH</option>
+                     </select></td>  
+                   </tr>
+               </tbody>
+           </table>
+            
+            <p>
+				<input type = "submit" value = "Submit">
+				<input type = "reset" value = "Clear">
+			</p>
+        
+        </form>
+    </body>
+</html>
