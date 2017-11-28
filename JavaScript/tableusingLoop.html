@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>table</title>
+        <style type="text/css">
+        
+            .odd {background-color:yellow}
+            
+        </style>
+        <script type="text/javascript">
+            var c=1;
+            
+            document.write("<table border='1'><thead><tr><th>a</th><th>(a*3)/2</th></tr></thead><tbody>");
+            
+            for(var i=4;i<=24;i+=4)
+                {
+                    var k = (i*3)/2;
+                    if(c%2!=0)
+                        document.write("<tr class='odd'><td>"+i
+                                      + "</td><td>"+k+"</td></tr>");
+                    else
+                        document.write("<tr><td>"+i+ "</td><td>"+k+"</td></tr>");
+                    c++;
+                }
+            document.writeln("</tbody></table>");
+        </script>
+    </head>
+    
+    <body>
+        
+    </body>
+</html>

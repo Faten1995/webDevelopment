@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Tempreture Calculator</title>
+        <script>
+        
+            var type;
+            var temp;
+            var tempValue = 0;
+            var newTemp = 0;
+            
+            type = window.prompt("Enter conversion type ( C= to Celsius, F= to Fahrenheit)","0");
+            
+            temp = window.prompt("Enter the temperature to be converted","0");
+            
+            tempValue = parseInt(temp);
+            
+            if(type==="C") {
+                newTemp = (5/9)*(tempValue - 32);
+                document.writeln("<p>The new tempreture is "+ newTemp +" c</p>");
+                } else if(type==="F") {
+                newTemp = (5/9)*tempValue;
+                document.writeln("<p>The new tempreture is "+ newTemp +" f</p>");
+                } else
+                document.writeln("<p>wrong input</p>");
+        
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
